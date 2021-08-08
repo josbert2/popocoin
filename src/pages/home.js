@@ -70,7 +70,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div class="w-8/12 tab-content">
-                        <div class="container-items-tabs py-3 " id="home" data-tab-content>
+                        <div class="container-items-tabs py-3 active" id="home" data-tab-content>
                             <div class="flex px-6">
                                 <div class="text-white  uppercase font-regular flex items-center text-sm">
                                     Promote your token

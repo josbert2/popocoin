@@ -10,9 +10,9 @@ import {
 import Home from './pages/home';
 import Trade from './pages/trade';
 import Header from './pages/header';
-import multiChart from './pages/multiChart';
+import Chart from './pages/multiChart';
 import about from './pages/about';
-import tools from './pages/tools';
+import Tools from './pages/tools';
 
 
 
@@ -27,7 +27,7 @@ function App() {
         <Switch>
           
           <Route path="/">
-          <Trade />
+            <Home />
           </Route>
 
           <Route path="/trade">
@@ -35,7 +35,7 @@ function App() {
           </Route>
 
           <Route path="/multichart">
-            <multiChart />
+          <Chart />
           </Route>
 
           <Route path="/about">

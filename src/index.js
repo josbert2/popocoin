@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/Goldplay/Goldplay-Light.woff'; 
+import './fonts/Goldplay/Goldplay-Bold.woff'; 
+
+
 
 ReactDOM.render(
   <React.StrictMode>
