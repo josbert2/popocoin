@@ -25,27 +25,11 @@ function App() {
         <div>
         <Header />  
         <Switch>
-          
-          <Route path="/">
-            <Home />
-          </Route>
-
-          <Route path="/trade">
-            <Trade />
-          </Route>
-
-          <Route path="/multichart">
-          <Chart />
-          </Route>
-
-          <Route path="/about">
-            <about />
-          </Route>
-
-          <Route path="/tool">
-            <tools />
-          </Route>
-
+          <Route path="/" exact component={Home} />
+          <Route path="/multi" exact component={Chart} />
+          <Route path="/trade" exact component={Trade} />
+          <Route path="/about" exact component={about} />
+          <Route path="/tool" exact component={Tools} />
         </Switch>
         </div>
     </Router>

@@ -1,13 +1,48 @@
 
 import React, { Component } from "react";
 
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
+import metamask from '../img/c57ca95b47569778a828d19178114f4db188b89b763c899ba0be274e97267d96-removebg-preview.png'
 import {
    BrowserRouter as Router,
    Switch,
    Route,
    Link
  } from "react-router-dom"
+
+ const customStyles = {
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      width: '400px',
+      borderRadius: '6px',
+      transform: 'translate(-50%, -50%)',
+    },
+};
+
+Modal.setAppElement('#root');
+
+
 const Header = () => {
+    let subtitle;
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        //subtitle.style.color = '#f00';
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
     return (
         <div  className="Home">
                 <header className="bg-white navbar shadow-sm dark:bg-gray-900 dark:border-gray-700 lg:fixed lg:w-full lg:top-0 lg:left-0 lg:z-40">
@@ -27,54 +62,21 @@ const Header = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className="flex flex-col space-y-4 lg:hidden" style={{ display: "none" }}>
-                            <div className="flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:space-x-6 xl:space-x-8 lg:items-center">
-                                <Link to="/chart" className="text-gray-500 dark:text-gray-200 hover:text-gray-800">Charts</Link> 
-                                
-                                
-                                <Link to="/premium" className="text-gray-500 dark:text-gray-200 hover:text-gray-800">Multi Chart</Link> 
-                                <Link to="/cheatsheet" className="text-gray-500 dark:text-gray-200 hover:text-gray-800 lg:hidden">Cheatsheet</Link>
-                                <Link to="/gradient-generator" className="text-gray-500 dark:text-gray-200 hover:text-gray-800 lg:hidden">Gradient Generator</Link>
-                                <div className="relative inline-block hidden lg:block">
-                                    <div>
-                                        <button className="text-gray-500 dark:text-gray-200 hover:text-gray-800 flex items-center space-x-1 focus:outline-none">
-                                            <span>Tools</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                  
-                                    
-                                </div>
-                            </div>
-                            <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:items-center lg:space-x-4">
-                                <button
-                                    type="button"
-                                    aria-label="Color Mode"
-                                    className="flex justify-center p-2 text-gray-500 transition duration-150 ease-in-out bg-gray-100 border border-transparent rounded-md lg:bg-white lg:dark:bg-gray-900 dark:text-gray-200 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50"
-                                >
-                                    
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 transform -rotate-90"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                                </button>
-                                
-                                
-                            </div>
-                        </div>
+                      
                         <div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-between lg:flex-1 lg:space-x-2">
                             <div className="flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:space-x-6 xl:space-x-8 lg:items-center">
-                                <Link to="/" className="text-gray-500 dark:text-gray-200 hover:text-gray-800">Charts</Link> <a href="/components" className="text-gray-500 dark:text-gray-200 hover:text-gray-800 lg:hidden">Components</a>
-                                <Link className="relative inline-block hidden lg:block " to="/trade">
+                               
+                                <Link to="/trade" className="relative inline-block hidden lg:block " >
                                     <div>
                                         <button className="text-gray-500 dark:text-gray-200 hover:text-gray-800 flex items-center space-x-1 focus:outline-none">
                                             <span class="text-white">Trade</span>
                                         </button>
                                     </div>
                                 </Link>
-                                <Link to="/premium" className="text-gray-500 dark:text-gray-200 hover:text-gray-800">Multi Chart</Link> 
-                                <Link to="/blog" className="text-gray-500 dark:text-gray-200 hover:text-gray-800">About</Link>
+                                <Link to="/multi" className="text-gray-500 dark:text-gray-200 hover:text-gray-800">Multi Chart</Link> 
+                                <Link to="/about" className="text-gray-500 dark:text-gray-200 hover:text-gray-800">About</Link>
                                
-                                <div className="relative inline-block hidden lg:block">
+                                <Link to="/tool" className="relative inline-block hidden lg:block">
                                     <div>
                                         <button className="text-gray-500 dark:text-gray-200 hover:text-gray-800 flex items-center space-x-1 focus:outline-none">
                                             <span>Tools</span>
@@ -83,22 +85,94 @@ const Header = () => {
                                     </div>
                      
                                     
-                                </div>
+                                </Link>
                             </div>
                             <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:items-center lg:space-x-4">
                                 
                                 
                                
-                                <Link
-                                    to="/"
-                                    className="flex items-center justify-center h-12 text-gray-100 px-4 mt-2 text-sm text-center text-gray-100 transition-colors duration-200 transform border rounded-lg lg:h-10 dark:text-gray-300 dark:border-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none"
+                                <button
+                                    onClick={openModal}
+                                    className="flex items-center justify-center h-12  px-4 mt-2 text-sm text-center 
+                                    text-gray-100 transition-colors duration-200 transform border rounded-lg lg:h-10 dark:text-gray-300
+                                     dark:border-gray-300 hover:bg-indigo-500 hover:text-gray-100 hover:border-indigo-500 dark:hover:bg-gray-700 focus:outline-none"
                                 >
                                     Connect
-                                </Link>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </header>
+                <Modal
+                    isOpen={modalIsOpen}
+                    onAfterOpen={afterOpenModal}
+                    onRequestClose={closeModal}
+                    style={customStyles}
+                    contentLabel="Example Modal"
+                  
+                >
+                    <div class="flex flex-col ">
+                        <div class="">
+                            <div class="bg-gray-700 rounded-md bg-opacity-10 flex items-center">
+                                <div class="w-20 h-20 mr-4">
+                                    <img class="w-full h-full" src={ metamask } />
+                                </div>
+                                <div class="text-gray-600 flex">
+                                    MetaMask
+                                   
+                                </div>
+                                <div class="ml-auto pr-2">
+                                        <svg class="text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="20" cy="12" r="2"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="20" r="2"/><rect height="2" transform="matrix(0.7081 -0.7061 0.7061 0.7081 -0.1146 13.9802)" width="6.22" x="13.74" y="6.13"/><polygon points="8.32,9.68 8.63,10 10.05,8.59 6.03,4.55 6.02,4.55 5.71,4.23 4.29,5.64 8.31,9.69"/><polygon points="15.41,13.94 14,15.35 17.99,19.36 18.34,19.71 19.76,18.3 15.77,14.29"/><polygon points="8.59,13.95 4.56,17.96 4.24,18.29 5.65,19.7 9.68,15.68 10.01,15.36"/><circle cx="12" cy="4" r="2"/></g></g></svg>
+                                 </div>
+                            </div>
+
+                            <div class="bg-gray-700 rounded-md bg-opacity-10 flex items-center mt-5">
+                                <div class="w-20 h-20 mr-4 rounded-full">
+                                    <img class="w-full h-full" src="https://registry.walletconnect.org/logo/lg/20459438007b75f4f4acb98bf29aa3b800550309646d375da5fd4aac6c2a2c66.jpeg" />
+                                </div>
+                                <div class="text-gray-600 flex">
+                                    Hobi Wallet
+                                   
+                                </div>
+                                <div class="ml-auto pr-2">
+                                        <svg class="text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="20" cy="12" r="2"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="20" r="2"/><rect height="2" transform="matrix(0.7081 -0.7061 0.7061 0.7081 -0.1146 13.9802)" width="6.22" x="13.74" y="6.13"/><polygon points="8.32,9.68 8.63,10 10.05,8.59 6.03,4.55 6.02,4.55 5.71,4.23 4.29,5.64 8.31,9.69"/><polygon points="15.41,13.94 14,15.35 17.99,19.36 18.34,19.71 19.76,18.3 15.77,14.29"/><polygon points="8.59,13.95 4.56,17.96 4.24,18.29 5.65,19.7 9.68,15.68 10.01,15.36"/><circle cx="12" cy="4" r="2"/></g></g></svg>
+                                 </div>
+                            </div>
+
+
+                            <div class="bg-gray-700 rounded-md bg-opacity-10 flex items-center mt-5">
+                                <div class="w-20 h-20 mr-4">
+                                    <img class="w-full h-full" src="https://registry.walletconnect.org/logo/lg/0b58bf037bf943e934706796fb017d59eace1dadcbc1d9fe24d9b46629e5985c.jpeg" />
+                                </div>
+                                <div class="text-gray-600 flex">
+                                   Pillar
+                                   
+                                </div>
+                                <div class="ml-auto pr-2">
+                                        <svg class="text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="20" cy="12" r="2"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="20" r="2"/><rect height="2" transform="matrix(0.7081 -0.7061 0.7061 0.7081 -0.1146 13.9802)" width="6.22" x="13.74" y="6.13"/><polygon points="8.32,9.68 8.63,10 10.05,8.59 6.03,4.55 6.02,4.55 5.71,4.23 4.29,5.64 8.31,9.69"/><polygon points="15.41,13.94 14,15.35 17.99,19.36 18.34,19.71 19.76,18.3 15.77,14.29"/><polygon points="8.59,13.95 4.56,17.96 4.24,18.29 5.65,19.7 9.68,15.68 10.01,15.36"/><circle cx="12" cy="4" r="2"/></g></g></svg>
+                                 </div>
+                            </div>
+
+
+                            <div class="bg-gray-700 rounded-md bg-opacity-10 flex items-center mt-5">
+                                <div class="w-20 h-20 mr-4">
+                                    <img class="w-full h-full" src="https://registry.walletconnect.org/logo/lg/9d373b43ad4d2cf190fb1a774ec964a1addf406d6fd24af94ab7596e58c291b2.jpeg" />
+                                </div>
+                                <div class="text-gray-600 flex">
+                                    ImToken
+                                   
+                                </div>
+                                <div class="ml-auto pr-2">
+                                        <svg class="text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="20" cy="12" r="2"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="20" r="2"/><rect height="2" transform="matrix(0.7081 -0.7061 0.7061 0.7081 -0.1146 13.9802)" width="6.22" x="13.74" y="6.13"/><polygon points="8.32,9.68 8.63,10 10.05,8.59 6.03,4.55 6.02,4.55 5.71,4.23 4.29,5.64 8.31,9.69"/><polygon points="15.41,13.94 14,15.35 17.99,19.36 18.34,19.71 19.76,18.3 15.77,14.29"/><polygon points="8.59,13.95 4.56,17.96 4.24,18.29 5.65,19.7 9.68,15.68 10.01,15.36"/><circle cx="12" cy="4" r="2"/></g></g></svg>
+                                 </div>
+                            </div>
+                        </div>
+
+                        <div class=" flex items-center justify-end mt-6">
+                            <button class="text-gray-500 py-3 w-28" onClick={closeModal}>close</button>
+                        </div>
+                    </div>
+                </Modal>
         </div>
     )
 

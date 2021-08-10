@@ -104,6 +104,11 @@
   transition-duration: .25s;
 }
 
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, .7) !important; 
+    z-index: 999 !important;
+}
+
 .menu__item {
   display: block;
   padding: 12px 24px;

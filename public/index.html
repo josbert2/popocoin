@@ -21,6 +21,10 @@
  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-grid-layout/1.2.5/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-resizable@3.0.4/css/styles.css">
+
+    
+    <link href="https://rosspi.github.io/gridstrap.js/jquery.gridstrap.css" rel="stylesheet"/>
+   
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -46,7 +50,8 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://rosspi.github.io/gridstrap.js/jquery.gridstrap.js"></script>
   <script>
     (function() {
       setTimeout(function(){
@@ -66,7 +71,13 @@
             target.classList.add('active')
           })
         })
+        $('#basic-grid').gridstrap();
       }, 3000)
+
+      
+
+  
+
     })();
 
   </script>

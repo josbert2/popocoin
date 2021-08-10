@@ -15,7 +15,7 @@ const Home = () => {
                                     <div class="w-12 h-12 svg-container p-2 rounded">
                                         <svg viewBox="0 -14 512.00001 512" class="text-white fill-current" xmlns="http://www.w3.org/2000/svg"><path d="m136.964844 308.234375c4.78125-2.757813 6.417968-8.878906 3.660156-13.660156-2.761719-4.777344-8.878906-6.417969-13.660156-3.660157-4.78125 2.761719-6.421875 8.882813-3.660156 13.660157 2.757812 4.78125 8.878906 6.421875 13.660156 3.660156zm0 0"/><path d="m95.984375 377.253906 50.359375 87.230469c10.867188 18.84375 35.3125 25.820313 54.644531 14.644531 19.128907-11.054687 25.703125-35.496094 14.636719-54.640625l-30-51.96875 25.980469-15c4.78125-2.765625 6.421875-8.878906 3.660156-13.660156l-13.003906-22.523437c1.550781-.300782 11.746093-2.300782 191.539062-37.570313 22.226563-1.207031 35.542969-25.515625 24.316407-44.949219l-33.234376-57.5625 21.238282-32.167968c2.085937-3.164063 2.210937-7.230469.316406-10.511719l-20-34.640625c-1.894531-3.28125-5.492188-5.203125-9.261719-4.980469l-38.472656 2.308594-36.894531-63.90625c-5.34375-9.257813-14.917969-14.863281-25.605469-14.996094-.128906-.003906-.253906-.003906-.382813-.003906-10.328124 0-19.703124 5.140625-25.257812 13.832031l-130.632812 166.414062-84.925782 49.03125c-33.402344 19.277344-44.972656 62.128907-25.621094 95.621094 17.679688 30.625 54.953126 42.671875 86.601563 30zm102.324219 57.238282c5.523437 9.554687 2.253906 21.78125-7.328125 27.316406-9.613281 5.558594-21.855469 2.144531-27.316407-7.320313l-50-86.613281 34.640626-20c57.867187 100.242188 49.074218 85.011719 50.003906 86.617188zm-22.683594-79.296876-10-17.320312 17.320312-10 10 17.320312zm196.582031-235.910156 13.820313 23.9375-12.324219 18.664063-23.820313-41.261719zm-104.917969-72.132812c2.683594-4.390625 6.941407-4.84375 8.667969-4.796875 1.707031.019531 5.960938.550781 8.527344 4.996093l116.3125 201.464844c3.789063 6.558594-.816406 14.804688-8.414063 14.992188-1.363281.03125-1.992187.277344-5.484374.929687l-123.035157-213.105469c2.582031-3.320312 2.914063-3.640624 3.425781-4.480468zm-16.734374 21.433594 115.597656 200.222656-174.460938 34.21875-53.046875-91.878906zm-223.851563 268.667968c-4.390625-7.597656-6.710937-16.222656-6.710937-24.949218 0-17.835938 9.585937-34.445313 25.011718-43.351563l77.941406-45 50 86.601563-77.941406 45.003906c-23.878906 13.78125-54.515625 5.570312-68.300781-18.304688zm0 0"/><path d="m105.984375 314.574219c-2.761719-4.78125-8.878906-6.421875-13.660156-3.660157l-17.320313 10c-4.773437 2.757813-10.902344 1.113282-13.660156-3.660156-2.761719-4.78125-8.878906-6.421875-13.660156-3.660156s-6.421875 8.878906-3.660156 13.660156c8.230468 14.257813 26.589843 19.285156 40.980468 10.980469l17.320313-10c4.78125-2.761719 6.421875-8.875 3.660156-13.660156zm0 0"/><path d="m497.136719 43.746094-55.722657 31.007812c-4.824218 2.6875-6.5625 8.777344-3.875 13.601563 2.679688 4.820312 8.765626 6.566406 13.601563 3.875l55.71875-31.007813c4.828125-2.6875 6.5625-8.777344 3.875-13.601562-2.683594-4.828125-8.773437-6.5625-13.597656-3.875zm0 0"/><path d="m491.292969 147.316406-38.636719-10.351562c-5.335938-1.429688-10.820312 1.734375-12.25 7.070312-1.429688 5.335938 1.738281 10.816406 7.074219 12.246094l38.640625 10.351562c5.367187 1.441407 10.824218-1.773437 12.246094-7.070312 1.429687-5.335938-1.738282-10.820312-7.074219-12.246094zm0 0"/><path d="m394.199219 7.414062-10.363281 38.640626c-1.429688 5.335937 1.734374 10.816406 7.070312 12.25 5.332031 1.425781 10.816406-1.730469 12.25-7.070313l10.359375-38.640625c1.429687-5.335938-1.734375-10.820312-7.070313-12.25-5.332031-1.429688-10.816406 1.734375-12.246093 7.070312zm0 0"/></svg>
                                     </div>
-                                    <div class="text-white ml-6 uppercase font-regular flex items-center text-sm">
+                                    <div class="text-white ml-6 uppercase font-semibol GB flex items-center text-sm">
                                         Promoted
                                     </div>
                                     <div class="ml-auto">
@@ -29,7 +29,7 @@ const Home = () => {
                                     <div class="w-12 h-12 svg-container p-2 rounded flex items-center justify-center">
                                         <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 16V8c0-1.1.89-2 2-2h9V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-1h-9c-1.11 0-2-.9-2-2zm3-8c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h9V8h-9zm3 5.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
                                      </div>
-                                    <div class="text-white ml-6 uppercase font-regular text-sm">
+                                    <div class="text-white ml-6 uppercase font-semibol GB text-sm">
                                         Wallet
                                     </div>
                                     <div class="ml-auto">
@@ -44,7 +44,7 @@ const Home = () => {
                                     <div class="w-12 h-12 svg-container p-2 rounded flex items-center justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg"  class="text-white fill-current" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24" y="0"/></g><g><g><path d="M19,13H5c-1.1,0-2,0.9-2,2v4c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2v-4C21,13.9,20.1,13,19,13z"/><path d="M19,3H5C3.9,3,3,3.9,3,5v4c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.1,3,19,3z"/></g></g></svg>
                                     </div>
-                                    <div class="text-white ml-6 uppercase font-regular text-sm">
+                                    <div class="text-white ml-6 uppercase font-semibol GB text-sm">
                                         Starred
                                     </div>
                                     <div class="ml-auto">
@@ -59,7 +59,7 @@ const Home = () => {
                                     <div class="w-12 h-12 svg-container p-3 rounded">
                                         <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/></g><g><g><path d="M9,5v0.38c-0.83-0.33-1.72-0.5-2.61-0.5c-1.42,0-2.84,0.43-4.05,1.29C1.83,6.53,1.77,7.26,2.21,7.7l2.57,2.57h1.11v1.11 c0.86,0.86,1.98,1.31,3.11,1.36V15H7c-0.55,0-1,0.45-1,1v2c0,1.1,0.9,2,2,2h10c1.66,0,3-1.34,3-3V5c0-0.55-0.45-1-1-1H10 C9.45,4,9,4.45,9,5z M7.89,10.41V8.26H5.61L4.57,7.22C5.14,7,5.76,6.88,6.39,6.88c1.34,0,2.59,0.52,3.54,1.46l1.41,1.41l-0.2,0.2 c-0.51,0.51-1.19,0.8-1.92,0.8C8.75,10.75,8.29,10.63,7.89,10.41z M19,17c0,0.55-0.45,1-1,1s-1-0.45-1-1v-1c0-0.55-0.45-1-1-1h-5 v-2.59c0.57-0.23,1.1-0.57,1.56-1.03l0.2-0.2L15.59,14H17v-1.41l-6-5.97V6h8V17z"/></g></g></svg>
                                     </div>
-                                    <div class="text-white ml-6 uppercase font-regular text-sm">
+                                    <div class="text-white ml-6 uppercase font-semibol GB text-sm">
                                        History
                                     </div>
                                     <div class="ml-auto">
@@ -69,10 +69,10 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="w-8/12 tab-content">
+                    <div class="w-8/12 tab-content md:border-l md:border-opacity-10 md:border-gray-50 md:border-solid md:ml-10">
                         <div class="container-items-tabs py-3 active" id="home" data-tab-content>
                             <div class="flex px-6">
-                                <div class="text-white  uppercase font-regular flex items-center text-sm">
+                                <div class="text-white  uppercase font-regular flex items-center text-sm GB">
                                     Promote your token
                                 </div>
                                 <div class="ml-auto">
@@ -98,7 +98,7 @@ const Home = () => {
                                     </div>
                                     <div class="w-full flex justify-end px-2 mt-2">
                                         <div class="w-full sm:w-64 inline-block relative">
-                                            <input type="" name="" class="leading-snug border border-gray-300 block w-full appearance-none bg-gray-100 text-sm text-gray-600 py-1 px-4 pl-8 rounded-lg" placeholder="Search" />
+                                            <input type="" name="" class="leading-snug border border-gray-300 block w-full appearance-none bg-gray-100 text-sm text-gray-600 py-3 px-4 pl-8 rounded-lg" placeholder="Filter" />
 
                                             <div class="pointer-events-none absolute pl-3 inset-y-0 left-0 flex items-center px-2 text-gray-300">
                                                 <svg class="fill-current h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999">
@@ -113,9 +113,9 @@ const Home = () => {
                                         <table class="table-auto border-collapse w-full">
                                             <thead>
                                                 <tr class="rounded-lg text-sm font-medium text-gray-700 text-left" style={{ fontSize: "0.9674rem" }}>
-                                                    <th class="px-4 py-3 bg-gray-200 text-white font-light" style={{ backgroundColor: "#3a3a3a" }}>Token</th>
-                                                    <th class="px-4 py-2 text-white font-light" style={{ backgroundColor: "#3a3a3a" }}>Balance</th>
-                                                    <th class="px-4 py-2 text-white font-light" style={{ backgroundColor: "#3a3a3a" }}></th>
+                                                    <th class="px-4 py-3 bg-gray-200 text-white  GB font-semibold uppercase" style={{ backgroundColor: "#3a3a3a" }}>Token</th>
+                                                    <th class="px-4 py-2 text-white GB font-semibold uppercase" style={{ backgroundColor: "#3a3a3a" }}>Balance</th>
+                                                    <th class="px-4 py-2 text-white  GB font-semibold uppercase" style={{ backgroundColor: "#3a3a3a" }}></th>
                                                 </tr>
                                             </thead>
                                             <tbody class="text-sm font-normal text-gray-700">
@@ -204,8 +204,9 @@ const Home = () => {
 
                         <div class="container-items-tabs py-3 h-full" id="pricing" data-tab-content>
 
-                           <div class="px-60 h-full flex items-center">
-                           <button class="bg-brand-500 w-full px-4 py-4 text-white uppercase font-bold rounded">Connect your wallet to see your tokens.</button>
+                           <div class="px-60 h-full flex items-center flex-col py-40">
+                           <svg id="Layer_1" class="text-white fill-current w-24 h-24 mb-8" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="XMLID_1441_"><g id="XMLID_561_"><path id="XMLID_592_" d="m482 275.988h-10v-70c0-27.596-19.378-50.736-45.238-56.568l-45.515-78.834c-6.67-11.553-17.44-19.818-30.327-23.271-9.099-2.437-18.481-2.258-27.279.398l-33.096-33.097c-19.475-19.473-51.159-19.475-70.634 0l-133.37 133.372h-28.541c-31.981 0-58 26.019-58 58v248c0 31.981 26.019 58 58 58h133c5.522 0 10-4.478 10-10s-4.478-10-10-10h-133c-20.953 0-38-17.047-38-38v-248c0-20.953 17.047-38 38-38h356c20.953 0 38 17.047 38 38v70h-74c-29.775 0-54 24.225-54 54s24.225 54 54 54h74v70c0 20.953-17.047 38-38 38h-133c-5.522 0-10 4.478-10 10s4.478 10 10 10h133c31.981 0 58-26.019 58-58v-70h10c16.542 0 30-13.458 30-30v-48c0-16.541-13.458-30-30-30zm-136.256-209.354c7.726 2.07 14.184 7.025 18.183 13.952l38.915 67.402h-215.549l135.728-78.363c6.926-3.998 14.994-5.062 22.723-2.991zm-111.69-37.875c5.655-5.656 13.176-8.771 21.174-8.771 7.999 0 15.52 3.115 21.175 8.771l28.331 28.331-157.44 90.898h-32.468zm257.946 325.229c0 5.514-4.486 10-10 10h-104c-18.748 0-34-15.252-34-34s15.252-34 34-34h104c5.514 0 10 4.486 10 10z"/><path id="XMLID_1063_" d="m376.33 319.988c-2.63 0-5.21 1.069-7.07 2.93s-2.93 4.43-2.93 7.07c0 2.63 1.069 5.21 2.93 7.069 1.86 1.86 4.44 2.931 7.07 2.931 2.64 0 5.21-1.07 7.069-2.931 1.87-1.859 2.931-4.439 2.931-7.069s-1.061-5.21-2.931-7.07c-1.859-1.86-4.429-2.93-7.069-2.93z"/><path id="XMLID_1068_" d="m236 491.988c-2.63 0-5.21 1.069-7.07 2.93s-2.93 4.44-2.93 7.07 1.069 5.21 2.93 7.069c1.86 1.86 4.44 2.931 7.07 2.931s5.21-1.07 7.069-2.931c1.86-1.859 2.931-4.439 2.931-7.069s-1.07-5.21-2.931-7.07c-1.859-1.86-4.439-2.93-7.069-2.93z"/></g></g></svg>
+                           <button class="bg-brand-500 w-full px-4 py-4 text-white uppercase font-semibold rounded ">Connect your wallet to see your tokens.</button>
                            </div>
 
                         </div>

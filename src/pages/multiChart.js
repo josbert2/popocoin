@@ -8,7 +8,7 @@ const multiChart = () => {
         <div  className="page__content pb-52" style={{ marginTop: '110px'}}>
      
            <div className="container mx-auto">
-                    
+           
                 <div class="item-misk p-2 rounded flex flex-col pb-10 relative">
                     <div class="absolute right-8 top-8 cursor-pointer">
                         
@@ -241,10 +241,10 @@ const multiChart = () => {
                      <strong class="GB new-line mt-3">cryto currency</strong>
                     </div>
                     <div class="py-6 w-full flex items-center px-10">
-                        <input type="text" class=" w-full p-2 rounded w-4/6 pl-6 GL bg-gray-50 bg-opacity-10 " placeholder="Enter Token name or address" />
+                        <input type="text" class=" w-full p-2 rounded w-4/6 pl-6 GL bg-gray-50 bg-opacity-10 text-gray-500" placeholder="Enter Token name or address" />
                         <button class="h-full bg-brand-500 p-2 ml-6 rounded bg-brand-500 GB  w-2/6 uppercase text-white">Search</button>
                     </div>
-                    <div class="grid grid-cols-5 gap-5 w-full  px-10">
+                    <div class="grid grid-cols-3 gap-5 w-full  px-10 " id="basic-grid">
                         <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
                             a   
                         </div>
@@ -277,21 +277,6 @@ const multiChart = () => {
                             a   
                         </div>
 
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
-                            a   
-                        </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
-                            a   
-                        </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
-                            a   
-                        </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
-                            a   
-                        </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
-                            a   
-                        </div>
                     </div>
                 </div>
             </div>
