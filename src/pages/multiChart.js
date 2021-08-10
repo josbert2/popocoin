@@ -1,5 +1,7 @@
 
 import GridLayout from 'react-grid-layout';
+import TradingViewWidget from 'react-tradingview-widget';
+
 
 const multiChart = () => {
 
@@ -245,35 +247,35 @@ const multiChart = () => {
                         <button class="h-full bg-brand-500 p-2 ml-6 rounded bg-brand-500 GB  w-2/6 uppercase text-white">Search</button>
                     </div>
                     <div class="grid grid-cols-3 gap-5 w-full  px-10 " id="basic-grid">
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
+                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-96 trad">
+                            <TradingViewWidget symbol="NASDAQ:AAPL" />
+                        </div>
+                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-96">
                             a   
                         </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
+                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-96">
                             a   
                         </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
+                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-96">
                             a   
                         </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
-                            a   
-                        </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
+                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-96">
                             a   
                         </div>
 
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
+                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-96">
                             a   
                         </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
+                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-96">
                             a   
                         </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
+                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-96">
                             a   
                         </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
+                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-96">
                             a   
                         </div>
-                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-44">
+                        <div class="bg-gray-50 bg-opacity-10  p-1 rounded w-full h-96">
                             a   
                         </div>
 
